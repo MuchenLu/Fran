@@ -1,0 +1,10 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 選 a 外面的 parent: https://stackoverflow.com/questions/1014861/is-there-a-css-parent-selector */
+button:has(.router-link-exact-active.menuItem-active-link) {
+    display: block;
+    background-color: rgb(253 224 71);
+}
